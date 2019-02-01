@@ -1,0 +1,19 @@
+{
+  "name": "kitfox-server",
+  "version": "0.0.1",
+  "description": "Server for Kitfox voice assistant",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benfrancis/kitfox-server.git"
+  },
+  "author": "Ben Francis",
+  "bugs": {
+    "url": "https://github.com/benfrancis/kitfox-server/issues"
+  },
+  "homepage": "https://github.com/benfrancis/kitfox-server#readme"
+}
