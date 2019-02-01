@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8081;
+const port = 8082;
 
 // Serve static resources
 app.use(express.static('static'));

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/benfrancis/kitfox-server/issues"
   },
-  "homepage": "https://github.com/benfrancis/kitfox-server#readme"
+  "homepage": "https://github.com/benfrancis/kitfox-server#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
