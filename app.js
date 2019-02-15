@@ -1,8 +1,24 @@
+/**
+ * Kitfox Server
+ *
+ * A voice assistant for the web.
+ */
 const express = require('express');
+const bodyParser = require('body-parser');
+const commandParser = require('./command_parser');
+
 const app = express();
-const port = 8082;
+
+const PORT = 8082;
+
+// Use JSON parser
+app.use(bodyParser.json());
+
+// Parse commands
+app.use('/commands', commandParser);
 
 // Serve static resources
 app.use(express.static('static'));
 
-app.listen(port, () => console.log(`Listening on port ${port}!`));
+// Start the HTTP server listening
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
